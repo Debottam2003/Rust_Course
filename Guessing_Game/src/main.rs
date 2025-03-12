@@ -17,7 +17,8 @@ fn main() {
         for j in 1..i + 1{
             print!("*");
         }
-        println!("");
+        print!("\n");
+        // println!("");
     }
     let mut count: i32 = 0;
     println!("...This is the loop...");
@@ -40,4 +41,9 @@ fn main() {
     for i in 1..6 {
         println!("Value: {}", i);
     }
+    let mut sgpa: f32 = 8.341;
+    let cgpa: f32 = 8.141;
+    println!("memory location of sgpa is {:p}", &sgpa);
+    println!("memory location of cgpa is {:p}", &cgpa);
+
 }
