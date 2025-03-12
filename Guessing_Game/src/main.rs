@@ -1,8 +1,8 @@
 use std::io;
 fn main() {
     println!("Hello, world!");
-    let apple = 5;
-    let mut banana = 4;
+    let apple: i32 = 5;
+    let mut banana: i32 = 4;
     //apple = 6;
     banana = 5;
     println!("{}", apple);
@@ -18,5 +18,26 @@ fn main() {
             print!("*");
         }
         println!("");
+    }
+    let mut count: i32 = 0;
+    println!("...This is the loop...");
+    loop {
+        println!("Count: {}", count);
+        count += 1;
+
+        if count == 5 {
+            println!("...Breaking from the loop...!");
+            break;
+        }
+    }
+    let mut count: u16 = 0;
+    println!("...This is the while loop...");
+    while count < 5 {
+        println!("Count: {}", count);
+        count += 1;
+    }
+    println!("...This is the for loop...");
+    for i in 1..6 {
+        println!("Value: {}", i);
     }
 }
