@@ -43,7 +43,27 @@ fn main() {
     }
     let mut sgpa: f32 = 8.341;
     let cgpa: f32 = 8.141;
+    let address: &f32 = &cgpa;
     println!("memory location of sgpa is {:p}", &sgpa);
-    println!("memory location of cgpa is {:p}", &cgpa);
-
+    println!("memory location of cgpa is {:p}", address);
+    sgpa = 8.345;
+    let mut a: i8 = 5;
+    let mut b: i8 = 10;
+    println!("{} {}", a, b);
+    swap_value(a, b);
+    println!("Call by value {} {}",a, b);
+    swap_reference(&mut a, &mut b);
+    println!("Call by reference {} {}",a, b);
 }
+fn swap_value(mut a: i8, mut b: i8){
+   let temp: i8 = a;
+   a = b;
+   b = temp;
+   println!("{} {}",a, b);
+}
+fn swap_reference(a: &mut i8, b: &mut i8){
+    let temp: i8 = *a;
+    *a = *b;
+    *b = temp;
+    println!("{} {}",*a, *b);
+ }
