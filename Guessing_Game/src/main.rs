@@ -13,4 +13,10 @@ fn main() {
               .read_line(&mut guess)
               .expect("Falied to get input");
     println!("The guessed number is: {}", guess);
+    for i in 1..6{
+        for j in 1..i + 1{
+            print!("*");
+        }
+        println!("");
+    }
 }
