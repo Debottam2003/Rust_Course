@@ -1,0 +1,1 @@
+C:\Users\DEBOTTAM\OneDrive\Desktop\Rust_Course\05_borrow_ownership\borrow_ownership\target\debug\borrow_ownership.exe: C:\Users\DEBOTTAM\OneDrive\Desktop\Rust_Course\05_borrow_ownership\borrow_ownership\src\main.rs
