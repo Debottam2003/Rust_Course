@@ -1,6 +1,6 @@
 // Rust gives the memory safety
 // Ownership can be transferred or can be only one mutable reference at a time and any number of immutable reference but not at same time
-
+// Once the mutable reference is out of scope then can create another mutable reference 
 fn main() {
     println!("Hello, world!");
 
