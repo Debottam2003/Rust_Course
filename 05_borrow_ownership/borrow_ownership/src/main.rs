@@ -22,3 +22,5 @@ fn main() {
     let r2: &String = &snew;
     println!("{} : {} : {}", snew, r1, r2);
 }
+
+// single mutable reference and multiple immutable references
