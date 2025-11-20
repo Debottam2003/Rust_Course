@@ -80,8 +80,12 @@ struct Point {
 
 impl Point {
     // Associated function (constructor-like)
-    fn new(x: f64, y: f64) -> Self {
-        Self { x, y }
+    // fn new(x: f64, y: f64) -> Self {
+    //     Self { x, y }
+    // }
+
+    fn new(x: f64, y: f64) -> Point {
+        Point { x, y }
     }
 
     // Method using an immutable reference
@@ -112,3 +116,7 @@ fn main() {
     let t = p.into_tuple();
     println!("Tuple: {:?}", t);
 }
+
+// &self - Immutable borrow
+// &mut self - Mutable borrow
+// self - Takes ownership
